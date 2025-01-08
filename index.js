@@ -7,6 +7,9 @@ const PORT = process.env.PORT || 4000;
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res) => {
+    res.send("Hello World");
+});
 
 app.get('/1', (req, res) => {
     res.render("project-1", { root: __dirname });
