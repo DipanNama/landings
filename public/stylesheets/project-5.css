@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-family: 'Libre Franklin';
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left{
+    flex: 1;
+    height: 100%;
+}
+
+.left .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+    position: relative;
+}
+
+.left .navbar .nav-left{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
+.left .navbar .nav-left i{
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(185, 185, 185);
+    transition: all 0.3s ease-in;
+}
+
+.left .navbar .nav-left i:hover{
+    color: #000;
+}
+
+.left .navbar .nav-right{
+    display: flex;
+    width: 85%;
+    align-items: center;
+}
+
+.left .navbar .nav-right li{
+    list-style-type: none;
+    padding-left: 80px;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(7, 7, 7);
+}
+
+.left .navbar .nav-right i{
+    padding-left: 80px;
+    font-size: 22px;
+    font-weight: 900;
+    color: dodgerblue;
+}
+
+.left .navbar .nav-right li a{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    padding-bottom: 6px;
+}
+
+.left .navbar .nav-right li a:hover,
+.left .navbar .nav-right li a.active{
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    /* padding-bottom: 6px; */
+    border-bottom: 4px solid rgb(160, 160, 160);
+    /* transition: all 0.3s ease-in; */
+}
+
+/* .left .navbar .nav-right li .active{
+    color: rgb(15, 14, 14);
+    border-bottom: 4px solid rgb(160, 160, 160);
+    padding-bottom: 6px;
+} */
+
+.left .heading{
+    position: relative;
+    top: 18%;
+    left: 20%;
+    height: 300px;
+    width: 70%;
+}
+
+.left .heading h2{
+    font-size: 120px;
+    line-height: 60px;
+    color: rgb(15, 15, 15);
+}
+
+.left .heading p{
+    font-size: 22px;
+    color: rgb(160, 160, 160);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.left .heading a{
+    font-size: 22px;
+    color: rgb(88, 88, 88);
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 4px solid rgb(160, 160, 160);
+}
+
+.right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.right .right-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.right .right-top-left{
+    width: 55%;
+    height: 100%;
+    background-color: #f2e9ea;
+    position: relative;
+}
+.right .right-top-left .right-top-left-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cactus-PhotoRoom.png-PhotoRoom.png);
+    background-position: 50% 60%;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.right .right-top-left h1:nth-child(2){
+    top: 0;
+    padding-left: 60px;
+    padding-top: 20px;
+    position: absolute;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 150px;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+.right .right-top-left h1:nth-child(3){
+    top: 0;
+    padding-left: 60px;
+    padding-top: 165px;
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 150px;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+.right .right-top-left i:nth-child(4){
+    color: #f8f2f3;
+    font-size: 100px;
+    bottom: 5%;
+    padding-left: 65px;
+    position: absolute;
+}
+
+.right .right-top-right{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/564x/2a/a6/85/2aa6855ca65660e6af5eb0081b36174e.jpg);
+    background-position: 50% 80%;
+    background-size: cover;
+}
+
+.right .right-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://uploadfile.bizhizu.cn/up/b6/ec/ce/b6ecce3c820308027a691cff07b0a568.jpg);
+    background-position: 50% 80%;
+    background-size: cover;
+}
+
+.right .right-bottom .right-bottom-arrow{
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    width: 240px;
+    background-color: #fff;
+}
+
+.right .right-bottom .right-bottom-arrow i{
+    font-size: 45px;
+}
+
+.right .right-bottom .right-bottom-arrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
